@@ -29,6 +29,8 @@ function drawLineChart(){
   var svg = d3.select("#apple-stock-chart-container").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
+      .attr("id", "apple-stock-chart")
+      .attr("class", "chart")
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
